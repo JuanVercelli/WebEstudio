@@ -1,0 +1,451 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: white;
+}
+#grid{
+	display: grid;
+	grid-template-areas: 
+	"nav nav nav"
+	"ban ban ban"
+	"nos nos nos"
+	"equ equ equ"
+	"fot fot fot";
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: repeat (5 1fr); 
+	justify-items: stretch;
+}
+#header{
+	grid-area: nav;
+	display: flex;
+	max-height: 100px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	width: 100%;
+
+	.botonera{
+		margin-right: 5px;
+		margin-left: 5px;
+
+		ul{
+			list-style: none;
+			padding: 5px;
+
+			li{
+				display: inline-block;
+				padding: 0 5px;
+
+				a{
+					font-family: 'Montserrat', sans-serif;
+					font-weight: 500;
+					font-size: small;
+					line-height: 3.0;
+					list-style-position: inside;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+
+#contenedor{
+	grid-area: ban;
+	overflow: hidden;
+
+	.banner{
+		background-image: url(../media/logo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: row;
+		align-items: end;
+		justify-content: center;
+		overflow: hidden;
+		min-height: 200px;
+
+		a{
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			font-size: small;
+			line-height: 3.0;
+			list-style-position: inside;
+			color: white;
+		}
+	}
+}
+
+.nosotros{
+	grid-area: nos;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.title{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: x-large;
+	color: black;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.text{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: black;
+	text-align: center;
+	line-height: 2.0;
+	overflow: hidden;
+	font-size: small;
+}
+.team{
+	grid-area: equ;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.first{
+    list-style-position: inside;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.second{
+	display: flex-none;
+}
+.name{
+	font-family:  'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: medium;
+}
+li{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: small;
+	color: black;
+	line-height: 3.0;
+	list-style: none;
+}
+
+#footer{
+	grid-area: fot;
+	background-color: black;
+	display:flex;
+	justify-content:space-between;
+	text-align: center;
+
+	p{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: small;
+		color: grey;
+	}
+}
+
+.abajo{
+	padding: 5px;
+	img{
+		width: 15px;
+	}
+}
+
+@media all and (min-width: 768px){
+	#grid{
+		display: grid;
+		grid-template-areas: 
+		"nav nav nav"
+		"ban ban ban"
+		"nos nos nos"
+		"equ equ equ"
+		"fot fot fot";
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: repeat (5 1fr); 
+		justify-items: stretch;
+	}
+	#header{
+		grid-area: nav;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+
+	
+		.botonera{
+			margin: 5px;
+	
+			ul{
+				list-style: none;
+				padding: 5px;
+	
+				li{
+					display: inline-block;
+					padding: 0 5px;
+	
+					a{
+						font-family: 'Montserrat', sans-serif;
+						font-weight: 600;
+						font-size: medium;
+						line-height: 3.0;
+						list-style-position: inside;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
+
+	#contenedor{
+		grid-area: ban;
+		overflow: hidden;
+
+		.banner{
+			background-image: url(../media/logo.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-direction: row;
+			align-items: end;
+			justify-content: center;
+			overflow: hidden;
+			min-height: 300px;
+
+			a{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size: small;
+				line-height: 3.0;
+				list-style-position: inside;
+				color: white;
+			}
+		}
+	}
+
+
+	.nosotros{
+		grid-area: nos;
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+	.title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: x-large;
+		color: black;
+		text-align: center;
+		overflow: hidden;
+		padding-top: 10px; 
+	}
+	.text{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		color: black;
+		text-align: center;
+		line-height: 2.0;
+		overflow: hidden;
+		font-size: medium;
+	}
+	.team{
+		grid-area: equ;
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+	.first{
+	    list-style-position: inside;
+	    list-style: none;
+	    text-align: center;
+	    display: flex;
+	    flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.second{
+		display: flex-none;
+	}
+	.name{
+		font-family:  'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: medium;
+	}
+	li{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		font-size: medium;
+	    color: black;
+	    line-height: 3.0;
+	    list-style: none;
+	}
+	#footer{
+		grid-area: fot;
+		display:flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+	.abajo{
+		padding: 5px;
+		
+		img{
+			width: 15px;
+		}
+	}
+}
+
+	@media all and (min-width: 1024px){
+	#grid{
+		display: grid;
+		grid-template-areas: 
+		"nav nav nav"
+		"ban ban ban"
+		"nos nos nos"
+		"equ equ equ"
+		"fot fot fot";
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: repeat (5 1fr); 
+		justify-items: stretch;
+	}
+	#header{
+		grid-area: nav;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+	
+		botonera{
+			margin: 10px;
+	
+			ul{
+			list-style: none;
+			padding: 10px;
+		
+				li{
+					display: inline-block;
+					padding: 0 10px;
+	
+					a{
+						font-family: 'Montserrat', sans-serif;
+						font-weight: 600;
+						line-height: 3.0;
+						list-style-position: inside;
+						color: black;
+						font-size: large;
+					}
+				}
+			}
+		}
+	}
+
+	#contenedor{
+		grid-area: ban;
+		overflow: hidden;
+	
+		.banner{
+			background-image: url(../media/logo.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-direction: row;
+			align-items: end;
+			justify-content: center;
+			overflow: hidden;
+			min-height: 400px;
+	
+			a{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 500;
+				line-height: 3.0;
+				list-style-position: inside;
+				color: white;
+				font-size: medium;
+			}
+		}
+	}
+			
+	.nosotros{
+		grid-area: nos;
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+	.title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color: black;
+		text-align: center;
+		overflow: hidden;
+		padding-top: 10px;
+		font-size: x-large;
+	}
+	.text{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: black;
+		text-align: center;
+		line-height: 2.0;
+		overflow: hidden;
+		font-size: large;
+	}
+	.team{
+		grid-area: equ;
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+	first{
+	    list-style-position: inside;
+	    list-style: none;
+	    text-align: center;
+	    display: flex;
+	    flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.second{
+		display: flex-none;
+	}
+	.name{
+		font-family:  'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: large;
+	}
+	li{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+	    color: black;
+	    line-height: 3.0;
+	    list-style: none;
+	    font-size: medium;
+	}
+	#footer{
+		grid-area: fot;
+		display:flex;
+		justify-content: space-between;
+		text-align:center;
+
+		p{
+			font-size: large;
+		}
+	}
+
+	.abajo{
+		padding: 5px;
+	
+		img{
+			width: 20px;
+		}
+	}
+}
