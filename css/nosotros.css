@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+#header {
+  display: flex;
+  max-height: 100px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+#header .botonera {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#header .botonera ul {
+  list-style: none;
+  padding: 5px;
+}
+
+#header .botonera ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+#header .botonera ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: small;
+  line-height: 3.0;
+  list-style-position: inside;
+  color: black;
+}
+
+#contenedor {
+  overflow: hidden;
+}
+
+#contenedor .banner {
+  background-image: url(../media/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+#contenedor .banner a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: small;
+  line-height: 3.0;
+  list-style-position: inside;
+  color: white;
+}
+
+.team {
+  display: flex;
+  max-height: 500px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  color: black;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  line-height: 2.0;
+  overflow: hidden;
+  font-size: small;
+  padding: 0 10px 0 10px;
+}
+
+.blog {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  line-height: 2.0;
+  overflow: hidden;
+}
+
+.articulo {
+  padding: 10px;
+}
+
+.articulo img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#footer {
+  grid-area: fot;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#footer p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: small;
+  color: grey;
+}
+
+.abajo {
+  padding: 5px;
+}
+
+.abajo img {
+  width: 15px;
+}
+
+@media all and (min-width: 768px) {
+  #header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  #header .botonera {
+    margin: 5px;
+  }
+  #header .botonera ul {
+    list-style: none;
+    padding: 5px;
+  }
+  #header .botonera ul li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  #header .botonera ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    line-height: 3.0;
+    list-style-position: inside;
+    color: black;
+  }
+  #contenedor {
+    overflow: hidden;
+  }
+  #contenedor .banner {
+    background-image: url(../media/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 300px;
+  }
+  #contenedor .banner a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    line-height: 3.0;
+    list-style-position: inside;
+    color: white;
+  }
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+  }
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+  }
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    line-height: 2.0;
+    overflow: hidden;
+    font-size: medium;
+    padding: 0 40px 0 40px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .picture {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  #header botonera {
+    margin: 10px;
+  }
+  #header botonera ul {
+    list-style: none;
+    padding: 10px;
+  }
+  #header botonera ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  #header botonera ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 3.0;
+    list-style-position: inside;
+    color: black;
+    font-size: large;
+  }
+  #contenedor {
+    overflow: hidden;
+  }
+  #contenedor .banner {
+    background-image: url(../media/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 400px;
+  }
+  #contenedor .banner a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 3.0;
+    list-style-position: inside;
+    color: white;
+    font-size: medium;
+  }
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+    font-size: x-large;
+  }
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+  }
+  .text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    line-height: 2.0;
+    overflow: hidden;
+    font-size: large;
+    padding: 0 20px 0 20px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .picture {
+    width: auto;
+    height: auto;
+  }
+}
