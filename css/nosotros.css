@@ -237,6 +237,9 @@ body {
     width: auto;
     height: auto;
   }
+  .picture img {
+    width: 100%;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -325,5 +328,8 @@ body {
   .picture {
     width: auto;
     height: auto;
+  }
+  .picture img {
+    width: 100%;
   }
 }

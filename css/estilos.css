@@ -5,55 +5,27 @@
 }
 
 body {
-  background-color: white;
-}
-
-#grid {
-  display: grid;
-  grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "equ equ equ" "fot fot fot";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat 5 1fr;
-  justify-items: stretch;
+  background-color: #E3E3E3;
 }
 
 #header {
-  grid-area: nav;
-  display: flex;
-  max-height: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
-#header .botonera {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#header .botonera ul {
-  list-style: none;
-  padding: 5px;
+  text-align: center;
 }
 
 #header .botonera ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 3px;
 }
 
 #header .botonera ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: small;
+  font-size: 0.7rem;
   line-height: 3.0;
-  list-style-position: inside;
   color: black;
 }
 
 #contenedor {
-  grid-area: ban;
   overflow: hidden;
 }
 
@@ -63,36 +35,32 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
   align-items: end;
   justify-content: center;
   overflow: hidden;
-  min-height: 200px;
+  height: 250px;
 }
 
 #contenedor .banner a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
   line-height: 3.0;
-  list-style-position: inside;
   color: white;
 }
 
 .nosotros {
-  grid-area: nos;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 30px 20px 30px 20px;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: x-large;
+  font-size: large;
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .text {
@@ -105,25 +73,16 @@ body {
   font-size: small;
 }
 
-.team {
-  grid-area: equ;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 .first {
-  list-style-position: inside;
   list-style: none;
   text-align: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
-.second {
-  display: flex-none;
+.pad {
+  padding-bottom: 30px;
 }
 
 .name {
@@ -132,17 +91,16 @@ body {
   font-size: medium;
 }
 
-li {
+.name ul li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: small;
   color: black;
-  line-height: 3.0;
+  line-height: 2.0;
   list-style: none;
 }
 
 #footer {
-  grid-area: fot;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -165,78 +123,31 @@ li {
 }
 
 @media all and (min-width: 768px) {
-  #grid {
-    display: grid;
-    grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "equ equ equ" "fot fot fot";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat 5 1fr;
-    justify-items: stretch;
-  }
-  #header {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
   #header .botonera {
-    margin: 5px;
-  }
-  #header .botonera ul {
-    list-style: none;
-    padding: 5px;
+    margin: 0;
   }
   #header .botonera ul li {
     display: inline-block;
-    padding: 0 5px;
+    padding-right: 20px;
   }
   #header .botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-  }
-  #contenedor {
-    grid-area: ban;
-    overflow: hidden;
+    font-size: small;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 300px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: small;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
+    height: 300px;
   }
   .nosotros {
-    grid-area: nos;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 40px;
   }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: x-large;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     overflow: hidden;
-    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .text {
     font-family: 'Montserrat', sans-serif;
@@ -247,39 +158,25 @@ li {
     overflow: hidden;
     font-size: medium;
   }
-  .team {
-    grid-area: equ;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
   .first {
-    list-style-position: inside;
     list-style: none;
     text-align: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .second {
-    display: flex-none;
   }
   .name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: medium;
+    font-size: 1.2rem;
   }
-  li {
+  .name li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: medium;
+    font-size: small;
     color: black;
     line-height: 3.0;
     list-style: none;
   }
   #footer {
-    grid-area: fot;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -293,56 +190,21 @@ li {
 }
 
 @media all and (min-width: 1024px) {
-  #grid {
-    display: grid;
-    grid-template-areas: "nav nav nav" "ban ban ban" "nos nos nos" "equ equ equ" "fot fot fot";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat 5 1fr;
-    justify-items: stretch;
+  #header .botonera {
+    margin: 0px;
   }
-  #header {
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
-  #header botonera {
-    margin: 10px;
-  }
-  #header botonera ul {
-    list-style: none;
-    padding: 10px;
-  }
-  #header botonera ul li {
+  #header .botonera ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 30px;
   }
-  #header botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-    font-size: large;
+  #header .botonera ul li a {
+    font-size: medium;
   }
   #contenedor {
-    grid-area: ban;
     overflow: hidden;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 400px;
+    height: 500px;
   }
   #contenedor .banner a {
     font-family: 'Montserrat', sans-serif;
@@ -353,70 +215,31 @@ li {
     font-size: medium;
   }
   .nosotros {
-    grid-area: nos;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding: 60px 100px 60px 100px;
   }
   .title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: black;
-    text-align: center;
-    overflow: hidden;
-    padding-top: 10px;
-    font-size: x-large;
+    font-size: 2.0rem;
+    padding-bottom: 30px;
   }
   .text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: black;
-    text-align: center;
     line-height: 2.0;
-    overflow: hidden;
-    font-size: large;
+    font-size: 1.1rem;
   }
   .team {
-    grid-area: equ;
-    padding-right: 150px;
-    padding-left: 150px;
-  }
-  first {
-    list-style-position: inside;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .second {
-    display: flex-none;
+    padding: 0 100px 30px 100px;
   }
   .name {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: large;
+    font-size: 1.3rem;
   }
-  li {
-    font-family: 'Montserrat', sans-serif;
+  .name ul li {
     font-weight: 400;
-    color: black;
-    line-height: 3.0;
-    list-style: none;
-    font-size: medium;
-  }
-  #footer {
-    grid-area: fot;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    font-size: 0.9rem;
   }
   #footer p {
     font-size: large;
-  }
-  .abajo {
-    padding: 5px;
   }
   .abajo img {
     width: 20px;
