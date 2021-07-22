@@ -5,41 +5,24 @@
 }
 
 body {
-  background-color: white;
+  background-color: #E3E3E3;
 }
 
 #header {
-  display: flex;
-  max-height: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
-#header .botonera {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#header .botonera ul {
-  list-style: none;
-  padding: 5px;
+  text-align: center;
+  height: 100%;
 }
 
 #header .botonera ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 #header .botonera ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: small;
+  font-size: 0.8rem;
   line-height: 3.0;
-  list-style-position: inside;
   color: black;
 }
 
@@ -53,30 +36,28 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
   align-items: end;
   justify-content: center;
   overflow: hidden;
-  min-height: 200px;
+  height: 250px;
 }
 
 #contenedor .banner a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
   line-height: 3.0;
-  list-style-position: inside;
   color: white;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: medium;
+  font-size: large;
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-top: 10px;
+  padding: 30px 0 30px 0;
 }
 
 .subtitle {
@@ -86,7 +67,7 @@ body {
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding: 15px 0 20px 0;
 }
 
 .text {
@@ -100,15 +81,6 @@ body {
   padding: 0 10px 0 10px;
 }
 
-.blog {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-  line-height: 2.0;
-  overflow: hidden;
-}
-
 .articulo {
   padding: 10px;
 }
@@ -119,7 +91,6 @@ body {
 }
 
 #footer {
-  grid-area: fot;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -142,63 +113,28 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
   #header .botonera {
-    margin: 5px;
-  }
-  #header .botonera ul {
-    list-style: none;
-    padding: 5px;
+    margin: 0;
   }
   #header .botonera ul li {
     display: inline-block;
-    padding: 0 5px;
+    padding-right: 20px;
   }
   #header .botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-  }
-  #contenedor {
-    overflow: hidden;
+    font-size: small;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 300px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: small;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
+    height: 300px;
   }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: large;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 20px;
   }
   .subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -220,63 +156,35 @@ body {
   }
   .flex {
     display: flex;
-    max-height: 500px;
+    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 0 40px 0 40px;
   }
-  .articulo {
-    max-width: 300px;
-  }
   .articulo img {
-    width: 100%;
+    width: 300px;
+    height: 200px;
   }
 }
 
 @media all and (min-width: 1024px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+  #header .botonera {
+    margin: 0px;
   }
-  #header botonera {
-    margin: 10px;
-  }
-  #header botonera ul {
-    list-style: none;
-    padding: 10px;
-  }
-  #header botonera ul li {
+  #header .botonera ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 30px;
   }
-  #header botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-    font-size: large;
+  #header .botonera ul li a {
+    font-size: medium;
   }
   #contenedor {
     overflow: hidden;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 400px;
+    height: 500px;
   }
   #contenedor .banner a {
     font-family: 'Montserrat', sans-serif;
@@ -287,13 +195,9 @@ body {
     font-size: medium;
   }
   .title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: black;
-    text-align: center;
-    overflow: hidden;
-    padding-top: 10px;
-    font-size: x-large;
+    font-size: 2.0rem;
+    padding: 30px 0 30px 0;
   }
   .subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -304,18 +208,14 @@ body {
     overflow: hidden;
   }
   .text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: black;
-    text-align: center;
     line-height: 2.0;
-    overflow: hidden;
-    font-size: large;
+    font-size: 1.1rem;
     padding: 0 100px 0 100px;
   }
   .flex {
     display: flex;
-    max-height: 500px;
+    height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -323,9 +223,10 @@ body {
     padding: 0 50px 0 50px;
   }
   .articulo {
-    max-width: 400px;
+    width: 450px;
   }
   .articulo img {
     width: 100%;
+    height: 300px;
   }
 }
