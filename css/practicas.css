@@ -5,41 +5,24 @@
 }
 
 body {
-  background-color: white;
+  background-color: #E3E3E3;
 }
 
 #header {
-  display: flex;
-  max-height: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
-#header .botonera {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#header .botonera ul {
-  list-style: none;
-  padding: 5px;
+  text-align: center;
+  height: 100%;
 }
 
 #header .botonera ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 #header .botonera ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: small;
+  font-size: 0.8rem;
   line-height: 3.0;
-  list-style-position: inside;
   color: black;
 }
 
@@ -53,34 +36,32 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
   align-items: end;
   justify-content: center;
   overflow: hidden;
-  min-height: 200px;
+  height: 250px;
 }
 
 #contenedor .banner a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
   line-height: 3.0;
-  list-style-position: inside;
   color: white;
 }
 
 #practice {
-  padding: 10px;
+  padding: 30px 20px 30px 20px;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: x-large;
+  font-size: large;
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .subtitle {
@@ -137,67 +118,31 @@ img {
 }
 
 @media all and (min-width: 768px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
   #header .botonera {
-    margin: 5px;
-  }
-  #header .botonera ul {
-    list-style: none;
-    padding: 5px;
+    margin: 0;
   }
   #header .botonera ul li {
     display: inline-block;
-    padding: 0 5px;
+    padding-right: 20px;
   }
   #header .botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-  }
-  #contenedor {
-    overflow: hidden;
+    font-size: 1.0rem;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 300px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: small;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
+    height: 300px;
   }
   #practice {
-    padding: 10px;
+    padding: 40px;
   }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: x-large;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     overflow: hidden;
-    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -219,8 +164,8 @@ img {
   }
   #grid {
     display: grid;
-    grid-template-areas: "civ civ img1" "img2 tra tra" "soc soc img3" "img4 fam fam";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "civ img1" "img2 tra" "soc img3" "img4 fam";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat 4 1fr;
     justify-items: stretch;
     padding: 0px 20px 20px 20px;
@@ -232,42 +177,42 @@ img {
   }
   #grid .civil {
     grid-area: civ;
-    height: 200px;
+    height: 300px;
     padding-top: 30px;
   }
   #grid .img1 {
     grid-area: img1;
-    height: 200px;
+    height: 300px;
     padding-top: 30px;
   }
   #grid .img2 {
     grid-area: img2;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #grid .trabajo {
     grid-area: tra;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #grid .societario {
     grid-area: soc;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #grid .img3 {
     grid-area: img3;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #grid .img4 {
     grid-area: img4;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #grid .familia {
     grid-area: fam;
-    height: 200px;
+    height: 300px;
     padding-top: 60px;
   }
   #footer {
@@ -285,47 +230,21 @@ img {
 }
 
 @media all and (min-width: 1024px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+  #header .botonera {
+    margin: 0px;
   }
-  #header botonera {
-    margin: 10px;
-  }
-  #header botonera ul {
-    list-style: none;
-    padding: 10px;
-  }
-  #header botonera ul li {
+  #header .botonera ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 30px;
   }
-  #header botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-    font-size: large;
+  #header .botonera ul li a {
+    font-size: medium;
   }
   #contenedor {
     overflow: hidden;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 400px;
+    height: 500px;
   }
   #contenedor .banner a {
     font-family: 'Montserrat', sans-serif;
@@ -336,16 +255,12 @@ img {
     font-size: medium;
   }
   #practice {
-    padding: 10px;
+    padding: 60px 100px 60px 100px;
   }
   .title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: black;
-    text-align: center;
-    overflow: hidden;
-    padding-top: 10px;
-    font-size: x-large;
+    font-size: 2.0rem;
+    padding-bottom: 30px;
   }
   .subtitle {
     font-family: 'Montserrat', sans-serif;
@@ -357,18 +272,14 @@ img {
     padding-top: 10px;
   }
   .text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: black;
-    text-align: center;
     line-height: 2.0;
-    overflow: hidden;
-    font-size: large;
+    font-size: 1.1rem;
   }
   #grid {
     display: grid;
-    grid-template-areas: "civ civ img1" "img2 tra tra" "soc soc img3" "img4 fam fam";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "civ img1" "img2 tra" "soc img3" "img4 fam";
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat 4 1fr;
     justify-items: stretch;
     padding: 0px 20px 20px 20px;
@@ -380,43 +291,43 @@ img {
   }
   #grid .civil {
     grid-area: civ;
-    height: 300px;
-    padding-top: 30px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .img1 {
     grid-area: img1;
-    height: 300px;
-    padding-top: 30px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .img2 {
     grid-area: img2;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .trabajo {
     grid-area: tra;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .societario {
     grid-area: soc;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .img3 {
     grid-area: img3;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .img4 {
     grid-area: img4;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #grid .familia {
     grid-area: fam;
-    height: 300px;
-    padding-top: 60px;
+    height: 400px;
+    padding: 30px;
   }
   #footer {
     grid-area: fot;
