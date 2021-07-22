@@ -59,6 +59,47 @@ body{
 #practice{
 	padding: 30px 20px 30px 20px
 }
+
+#grid .civil{
+	grid-area: civ;
+	height: 150px;
+	padding: 0 10px 30px 10px;
+}
+#grid .img1{
+	grid-area: img1;
+	height: 250px;
+	padding: 10px 10px 30px 10px;
+}
+#grid .img2{
+	grid-area: img2;
+	height: 250px;
+	padding: 10px 10px 30px 10px;
+}
+#grid .trabajo{
+	grid-area: tra;
+	height: 200px;
+	padding: 10px 10px 30px 10px;
+}
+#grid .societario{
+	grid-area: soc;
+	height: 200px;
+	padding: 10px 10px 30px 10px;
+}
+#grid .img3{
+	grid-area: img3;
+	height: 250px;
+	padding: 10px 10px 30px 10px;
+}
+#grid .img4{
+	grid-area: img4;
+	height: 250px;
+	padding: 10px 10px 10px 10px;
+}
+#grid .familia{
+	grid-area: fam;
+	height: 200px;
+	padding: 0 10px 10px 10px;
+}
 .title{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
