@@ -5,41 +5,24 @@
 }
 
 body {
-  background-color: white;
+  background-color: #E3E3E3;
 }
 
 #header {
-  display: flex;
-  max-height: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
-#header .botonera {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#header .botonera ul {
-  list-style: none;
-  padding: 5px;
+  text-align: center;
+  height: 100%;
 }
 
 #header .botonera ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 #header .botonera ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: small;
+  font-size: 0.8rem;
   line-height: 3.0;
-  list-style-position: inside;
   color: black;
 }
 
@@ -53,54 +36,69 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
   align-items: end;
   justify-content: center;
   overflow: hidden;
-  min-height: 200px;
+  height: 250px;
 }
 
 #contenedor .banner a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
   line-height: 3.0;
-  list-style-position: inside;
   color: white;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: medium;
+  font-size: large;
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   color: black;
-  text-align: left;
+  text-align: center;
   line-height: 2.0;
   overflow: hidden;
   font-size: small;
-  padding-left: 10px;
 }
 
-#ubicacion {
-  padding: 5px;
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  color: black;
+  text-align: left;
+  overflow: hidden;
+  padding-top: 10px;
 }
 
-#ubicacion img {
-  max-width: 100%;
-  max-height: 100%;
+#contacto {
+  padding: 20px 0 20px 0;
+}
+
+.formulario {
+  padding-bottom: 20px;
+}
+
+#ubicacion .ubi1 {
+  padding-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: 0px;
 }
 
 #footer {
-  grid-area: fot;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -123,69 +121,34 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
   #header .botonera {
-    margin: 5px;
-  }
-  #header .botonera ul {
-    list-style: none;
-    padding: 5px;
+    margin: 0;
   }
   #header .botonera ul li {
     display: inline-block;
-    padding: 0 5px;
+    padding-right: 20px;
   }
   #header .botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-  }
-  #contenedor {
-    overflow: hidden;
+    font-size: small;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 300px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: small;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
+    height: 300px;
   }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: large;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 20px;
   }
   .text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: black;
-    text-align: left;
+    text-align: center;
     line-height: 2.0;
     overflow: hidden;
     font-size: medium;
@@ -197,50 +160,35 @@ body {
     width: 100%;
     height: 100%;
   }
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .abajo {
+    padding: 5px;
+  }
+  .abajo img {
+    width: 15px;
+  }
 }
 
 @media all and (min-width: 1024px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+  #header .botonera {
+    margin: 0px;
   }
-  #header botonera {
-    margin: 10px;
-  }
-  #header botonera ul {
-    list-style: none;
-    padding: 10px;
-  }
-  #header botonera ul li {
+  #header .botonera ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 30px;
   }
-  #header botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-    font-size: large;
+  #header .botonera ul li a {
+    font-size: medium;
   }
   #contenedor {
     overflow: hidden;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 400px;
+    height: 500px;
   }
   #contenedor .banner a {
     font-family: 'Montserrat', sans-serif;
@@ -251,36 +199,36 @@ body {
     font-size: medium;
   }
   .title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: black;
-    text-align: center;
-    overflow: hidden;
-    padding-top: 10px;
-    font-size: large;
+    font-size: 2.0rem;
+    padding-bottom: 30px;
   }
   .text {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: black;
-    text-align: left;
     line-height: 2.0;
-    overflow: hidden;
-    font-size: medium;
+    font-size: 1.1rem;
   }
-  #formulario {
+  #contacto {
     display: flex;
     max-height: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 5px;
+    padding: 30px 100px 30px 10px;
   }
-  #ubicacion {
-    padding: 5px;
+  #ubicacion .ubi1 {
+    display: block;
+    padding-bottom: 30px;
   }
-  #ubicacion img {
-    max-width: 100%;
-    max-height: 100%;
+  #ubicacion .ubi1 iframe {
+    width: 400px;
+    height: 300px;
+    border: 0px;
+  }
+  #footer p {
+    font-size: large;
+  }
+  .abajo img {
+    width: 20px;
   }
 }
