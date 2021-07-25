@@ -103,8 +103,6 @@ body {
 
 #footer {
   background-color: black;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -178,8 +176,6 @@ body {
     list-style: none;
   }
   #footer {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
   }
   .abajo {
@@ -243,6 +239,6 @@ body {
     font-size: large;
   }
   .abajo img {
-    width: 20px;
+    width: 40px;
   }
 }

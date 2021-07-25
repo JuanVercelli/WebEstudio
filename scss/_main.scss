@@ -109,8 +109,6 @@ body{
 
 #footer{
 	background-color: black;
-	display:flex;
-	justify-content:space-between;
 	text-align: center;
 
 	p{
@@ -208,8 +206,6 @@ body{
 	}
 
 	#footer{
-		display:flex;
-		justify-content: space-between;
 		text-align: center;
 	}
 
@@ -302,7 +298,7 @@ body{
 	.abajo{
 	
 		img{
-			width: 20px;
+			width: 40px;
 		}
 	}
 }

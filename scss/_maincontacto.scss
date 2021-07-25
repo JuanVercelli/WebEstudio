@@ -108,8 +108,6 @@ iframe{
 
 #footer{
 	background-color: black;
-	display:flex;
-	justify-content:space-between;
 	text-align: center;
 
 	p{
@@ -188,8 +186,6 @@ iframe{
 		}
 	}
 	#footer{
-		display:flex;
-		justify-content: space-between;
 		text-align: center;
 	}
 
@@ -264,14 +260,15 @@ iframe{
 		.ubi1{
 			display: block;
 			padding-bottom: 30px;
-
-			iframe{
-				width: 400px; 
-				height: 300px;
-				border: 0px;
-			}
 		}
 	}
+
+	iframe{
+		width: 400px; 
+		height: 300px;
+		border: 0px;
+	}
+	
 	#footer{
 	
 		p{
@@ -282,7 +279,7 @@ iframe{
 	.abajo{
 	
 		img{
-			width: 20px;
+			width: 40px;
 		}
 	}
 }

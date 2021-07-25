@@ -100,8 +100,6 @@ iframe {
 
 #footer {
   background-color: black;
-  display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -161,8 +159,6 @@ iframe {
     height: 100%;
   }
   #footer {
-    display: flex;
-    justify-content: space-between;
     text-align: center;
   }
   .abajo {
@@ -220,7 +216,7 @@ iframe {
     display: block;
     padding-bottom: 30px;
   }
-  #ubicacion .ubi1 iframe {
+  iframe {
     width: 400px;
     height: 300px;
     border: 0px;
@@ -229,6 +225,6 @@ iframe {
     font-size: large;
   }
   .abajo img {
-    width: 20px;
+    width: 40px;
   }
 }

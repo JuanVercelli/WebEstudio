@@ -138,10 +138,7 @@ img{
 }
 
 #footer{
-	grid-area: fot;
 	background-color: black;
-	display:flex;
-	justify-content:space-between;
 	text-align: center;
 
 	p{
@@ -154,7 +151,6 @@ img{
 
 .abajo{
 	padding: 5px;
-	
 	img{
 		width: 15px;
 	}
@@ -287,11 +283,9 @@ img{
 		padding-top: 60px;
 	}
 	#footer{
-		grid-area: fot;
-		display:flex;
-		justify-content: space-between;
 		text-align: center;
 	}
+
 	.abajo{
 		padding: 5px;
 		
@@ -419,16 +413,16 @@ img{
 		padding: 30px;
 	}
 	#footer{
-		grid-area: fot;
-		display:flex;
-		justify-content: space-between;
-		text-align: center;
+	
+		p{
+			font-size: large;
+		}
 	}
+
 	.abajo{
-		padding: 5px;
-		
+	
 		img{
-			width: 20px;
+			width: 40px;
 		}
 	}
 }

@@ -5,41 +5,24 @@
 }
 
 body {
-  background-color: white;
+  background-color: #E3E3E3;
 }
 
 #header {
-  display: flex;
-  max-height: 100px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
-#header .botonera {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-#header .botonera ul {
-  list-style: none;
-  padding: 5px;
+  text-align: center;
+  height: 100%;
 }
 
 #header .botonera ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 #header .botonera ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: small;
+  font-size: 0.8rem;
   line-height: 3.0;
-  list-style-position: inside;
   color: black;
 }
 
@@ -53,49 +36,38 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: row;
   align-items: end;
   justify-content: center;
   overflow: hidden;
-  min-height: 200px;
+  height: 250px;
 }
 
 #contenedor .banner a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: small;
   line-height: 3.0;
-  list-style-position: inside;
   color: white;
-}
-
-.team {
-  display: flex;
-  max-height: 500px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 50px 0 50px;
 }
 
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: medium;
+  font-size: large;
   color: black;
   text-align: center;
   overflow: hidden;
-  padding-top: 10px;
+  padding: 20px 0 20px 0;
 }
 
 .subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: medium;
+  font-weight: 600;
   color: black;
   text-align: center;
+  line-height: 2.0;
   overflow: hidden;
+  font-size: small;
   padding-bottom: 10px;
 }
 
@@ -107,40 +79,64 @@ body {
   line-height: 2.0;
   overflow: hidden;
   font-size: small;
-  padding: 0 10px 0 10px;
 }
 
-.blog {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-  line-height: 2.0;
-  overflow: hidden;
-}
-
-.articulo {
+#grid {
   padding: 10px;
 }
 
-.articulo img {
-  width: 100%;
+img {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#grid .picAg {
+  grid-area: picAg;
+  height: 250px;
+  padding: 0 10px 30px 10px;
+}
+
+#grid .abogAg {
+  grid-area: abogAg;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+}
+
+#grid .picCa {
+  grid-area: picCa;
+  height: 250px;
+  padding: 10px 10px 30px 10px;
+}
+
+#grid .abogCa {
+  grid-area: abogCa;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+}
+
+#grid .picVe {
+  grid-area: picVe;
+  height: 200px;
+  padding: 10px 10px 30px 10px;
+}
+
+#grid .abogVe {
+  grid-area: abogVe;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
 }
 
 #footer {
-  grid-area: fot;
   background-color: black;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
 }
 
-#footer p {
+#footer .textfoot {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: small;
   color: grey;
+  text-align: center;
 }
 
 .abajo {
@@ -152,71 +148,37 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-  }
   #header .botonera {
-    margin: 5px;
-  }
-  #header .botonera ul {
-    list-style: none;
-    padding: 5px;
+    margin: 0;
   }
   #header .botonera ul li {
     display: inline-block;
-    padding: 0 5px;
+    padding-right: 20px;
   }
   #header .botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-  }
-  #contenedor {
-    overflow: hidden;
+    font-size: 1.0rem;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 300px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: small;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
+    height: 300px;
   }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: large;
+    font-size: 1.5rem;
     color: black;
     text-align: center;
     overflow: hidden;
+    padding: 30px 0 20px 0;
   }
   .subtitle {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: medium;
+    font-weight: 500;
+    font-size: 1.0rem;
     color: black;
     text-align: center;
     overflow: hidden;
+    padding-bottom: 10px;
   }
   .text {
     font-family: 'Montserrat', sans-serif;
@@ -225,65 +187,70 @@ body {
     text-align: center;
     line-height: 2.0;
     overflow: hidden;
-    font-size: medium;
-    padding: 0 40px 0 40px;
+    font-size: 1.0rem;
   }
-  .flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  #grid {
+    padding: 10px;
   }
-  .picture {
-    width: auto;
-    height: auto;
-  }
-  .picture img {
+  img {
+    overflow: hidden;
     width: 100%;
+    height: 100%;
+  }
+  #grid .picAg {
+    height: 300px;
+    width: 400px;
+    padding: 0 0 0 170px;
+  }
+  #grid .abogAg {
+    height: 100%;
+    padding: 10px 60px 30px 60px;
+  }
+  #grid .picCa {
+    height: 300px;
+    width: 400px;
+    padding: 0 0 0 170px;
+  }
+  #grid .abogCa {
+    height: 100%;
+    padding: 10px 60px 30px 60px;
+  }
+  #grid .picVe {
+    height: 300px;
+    width: 400px;
+    padding: 0 0 0 170px;
+  }
+  #grid .abogVe {
+    height: 100%;
+    padding: 10px 10px 30px 10px;
+  }
+  #footer {
+    text-align: center;
+  }
+  .abajo {
+    padding: 5px;
+  }
+  .abajo img {
+    width: 15px;
   }
 }
 
 @media all and (min-width: 1024px) {
-  #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+  #header .botonera {
+    margin: 0px;
   }
-  #header botonera {
-    margin: 10px;
-  }
-  #header botonera ul {
-    list-style: none;
-    padding: 10px;
-  }
-  #header botonera ul li {
+  #header .botonera ul li {
     display: inline-block;
-    padding: 0 10px;
+    padding-right: 30px;
   }
-  #header botonera ul li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: black;
-    font-size: large;
+  #header .botonera ul li a {
+    font-size: medium;
   }
   #contenedor {
     overflow: hidden;
   }
   #contenedor .banner {
-    background-image: url(../media/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    overflow: hidden;
-    min-height: 400px;
+    height: 500px;
   }
   #contenedor .banner a {
     font-family: 'Montserrat', sans-serif;
@@ -293,13 +260,15 @@ body {
     color: white;
     font-size: medium;
   }
+  .padding {
+    padding-top: 40px;
+  }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color: black;
     text-align: center;
     overflow: hidden;
-    padding-top: 10px;
     font-size: x-large;
   }
   .subtitle {
@@ -307,29 +276,69 @@ body {
     font-weight: 500;
     font-size: large;
     color: black;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
+    padding-bottom: 20px;
   }
   .text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: black;
-    text-align: center;
+    text-align: left;
     line-height: 2.0;
     overflow: hidden;
-    font-size: large;
-    padding: 0 20px 0 20px;
+    font-size: mediuem;
   }
-  .flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  #grid {
+    display: grid;
+    grid-template-areas: "picAg abogAg" "picCa abogCa" "picVe abogVe";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 3 1fr;
+    justify-items: stretch;
+    padding: 0px 20px 20px 20px;
   }
-  .picture {
-    width: auto;
-    height: auto;
-  }
-  .picture img {
+  #grid img {
+    overflow: hidden;
     width: 100%;
+    height: 100%;
+  }
+  #grid .picAg {
+    grid-area: picAg;
+    height: 400px;
+    width: auto;
+    padding: 30px;
+  }
+  #grid .abogAg {
+    grid-area: abogAg;
+    height: 100%;
+    padding: 30px;
+  }
+  #grid .picCa {
+    grid-area: picCa;
+    height: 400px;
+    width: auto;
+    padding: 30px;
+  }
+  #grid .abogCa {
+    grid-area: abogCa;
+    height: 100%;
+    padding: 30px;
+  }
+  #grid .picVe {
+    grid-area: picVe;
+    height: 400px;
+    width: auto;
+    padding: 30px;
+  }
+  #grid .abogVe {
+    grid-area: abogVe;
+    height: 100%;
+    padding: 30px;
+  }
+  #footer p {
+    font-size: large;
+  }
+  .abajo img {
+    width: 40px;
   }
 }
