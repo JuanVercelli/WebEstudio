@@ -42,14 +42,6 @@ body {
   height: 250px;
 }
 
-#contenedor .banner a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: small;
-  line-height: 3.0;
-  color: white;
-}
-
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -108,6 +100,7 @@ body {
 
 .abajo img {
   width: 15px;
+  padding-right: 3px;
 }
 
 @media all and (min-width: 768px) {
@@ -173,6 +166,7 @@ body {
   }
   .abajo img {
     width: 15px;
+    padding-right: 5px;
   }
 }
 
@@ -192,14 +186,6 @@ body {
   }
   #contenedor .banner {
     height: 500px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
-    font-size: medium;
   }
   .title {
     font-weight: 600;
@@ -241,5 +227,6 @@ body {
   }
   .abajo img {
     width: 40px;
+    padding-right: 10px;
   }
 }

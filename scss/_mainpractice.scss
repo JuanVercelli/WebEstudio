@@ -45,14 +45,6 @@ body{
 		justify-content: center;
 		overflow: hidden;
 		height: 250px;
-
-		a{
-			font-family: 'Montserrat', sans-serif;
-			font-weight: 500;
-			font-size: small;
-			line-height: 3.0;
-			color: white;
-		}
 	}
 }
 
@@ -61,43 +53,35 @@ body{
 }
 
 #grid .civil{
-	grid-area: civ;
-	height: 150px;
+	height: 200px;
 	padding: 0 10px 30px 10px;
 }
 #grid .img1{
-	grid-area: img1;
-	height: 250px;
+	height: 200px;
 	padding: 10px 10px 30px 10px;
 }
 #grid .img2{
-	grid-area: img2;
-	height: 250px;
+	height: 200px;
 	padding: 10px 10px 30px 10px;
 }
 #grid .trabajo{
-	grid-area: tra;
 	height: 200px;
 	padding: 10px 10px 30px 10px;
 }
 #grid .societario{
-	grid-area: soc;
 	height: 200px;
 	padding: 10px 10px 30px 10px;
 }
 #grid .img3{
-	grid-area: img3;
-	height: 250px;
+	height: 200px;
 	padding: 10px 10px 30px 10px;
 }
 #grid .img4{
-	grid-area: img4;
-	height: 250px;
+	height: 200px;
 	padding: 10px 10px 10px 10px;
 }
 #grid .familia{
-	grid-area: fam;
-	height: 200px;
+	height: 220px;
 	padding: 0 10px 10px 10px;
 }
 .title{
@@ -112,7 +96,7 @@ body{
 .subtitle{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: medium;
+	font-size: small;
 	color: black;
 	text-align: center;
 	overflow: hidden;
@@ -153,6 +137,7 @@ img{
 	padding: 5px;
 	img{
 		width: 15px;
+		padding-right: 3px;
 	}
 }
 
@@ -287,10 +272,10 @@ img{
 	}
 
 	.abajo{
-		padding: 5px;
 		
 		img{
 			width: 15px;
+			padding-right: 5px;
 		}
 	}
 }
@@ -320,15 +305,6 @@ img{
 		.banner{
 			
 			height: 500px;
-	
-			a{
-				font-family: 'Montserrat', sans-serif;
-				font-weight: 500;
-				line-height: 3.0;
-				list-style-position: inside;
-				color: white;
-				font-size: medium;
-			}
 		}
 	}
 
@@ -423,6 +399,7 @@ img{
 	
 		img{
 			width: 40px;
+			padding-right: 10px;
 		}
 	}
 }

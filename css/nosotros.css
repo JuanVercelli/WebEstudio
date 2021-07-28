@@ -42,14 +42,6 @@ body {
   height: 250px;
 }
 
-#contenedor .banner a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: small;
-  line-height: 3.0;
-  color: white;
-}
-
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -137,6 +129,7 @@ img {
   font-size: small;
   color: grey;
   text-align: center;
+  line-height: 2.0;
 }
 
 .abajo {
@@ -145,6 +138,7 @@ img {
 
 .abajo img {
   width: 15px;
+  padding-right: 3px;
 }
 
 @media all and (min-width: 768px) {
@@ -232,6 +226,7 @@ img {
   }
   .abajo img {
     width: 15px;
+    padding-right: 5px;
   }
 }
 
@@ -251,14 +246,6 @@ img {
   }
   #contenedor .banner {
     height: 500px;
-  }
-  #contenedor .banner a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 3.0;
-    list-style-position: inside;
-    color: white;
-    font-size: medium;
   }
   .padding {
     padding-top: 40px;
@@ -304,7 +291,7 @@ img {
   }
   #grid .picAg {
     grid-area: picAg;
-    height: 400px;
+    height: 450px;
     width: auto;
     padding: 30px;
   }
@@ -315,7 +302,7 @@ img {
   }
   #grid .picCa {
     grid-area: picCa;
-    height: 400px;
+    height: 490px;
     width: auto;
     padding: 30px;
   }
@@ -340,5 +327,6 @@ img {
   }
   .abajo img {
     width: 40px;
+    padding-right: 10px;
   }
 }
