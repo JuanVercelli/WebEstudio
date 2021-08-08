@@ -105,23 +105,22 @@ body{
 
 #footer{
 	background-color: black;
-	text-align: center;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
 }
-.textfoot{
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	font-size: small;
-	color: grey;
-	text-align: center;
-	line-height: 2.0;
+#footer .logo{
+  width: 200px;
+  height: auto;
+  img{
+  	width: 100%;
+  }
 }
-.abajo{
-	text-align: center;
-	padding-top: 10px;
-	
-	img{
-		width: 35px;
-		padding-right: 3px;
+#footer .abajo{
+  padding-right: 10px;
+  img{
+  	width: 20px;
 	}
 }
 
@@ -208,20 +207,15 @@ body{
 			width: 300px;
 		}
 	}
-	#footer{
-		text-align: center;
+	#footer .logo{
+		width: 200px;
 	}
-	.textfoot{
-		font-size: large;
-	}
-
-	.abajo{
-		padding: 5px;
-		
-		img{
-			width: 35px;
-			padding-right: 5px;
-		}
+  	#footer .abajo{
+    	padding-right: 35px;
+  	img{
+    	width: 25px;
+    	padding-right: 10px;
+  		}
 	}
 }
 
@@ -298,15 +292,15 @@ body{
 			width: 100%;
 		}
 	}
-	.textfoot{
-		font-size: x-large;
-	}
-
-	.abajo{
-	
-		img{
-			width: 40px;
-			padding-right: 10px;
-		}
-	}
+	#footer .logo{
+    	width: 200px;
+  	}
+  	#footer .abajo{
+    	padding-right: 50px;
+  	
+  		img{
+    		width: 30px;
+    		padding-right: 10px;
+  		}
+  	}
 }

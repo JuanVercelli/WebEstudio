@@ -123,26 +123,27 @@ iframe {
 
 #footer {
   background-color: black;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.textfoot {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: small;
-  color: grey;
-  text-align: center;
-  line-height: 2.0;
+#footer .logo {
+  width: 200px;
+  height: auto;
 }
 
-.abajo {
-  text-align: center;
-  padding-top: 10px;
+#footer .logo img {
+  width: 100%;
 }
 
-.abajo img {
-  width: 25px;
-  padding-right: 3px;
+#footer .abajo {
+  padding-right: 10px;
+}
+
+#footer .abajo img {
+  width: 20px;
 }
 
 @media all and (min-width: 768px) {
@@ -204,18 +205,15 @@ iframe {
     width: 100%;
     height: 100%;
   }
-  #footer {
-    text-align: center;
+  #footer .logo {
+    width: 200px;
   }
-  .textfoot {
-    font-size: large;
+  #footer .abajo {
+    padding-right: 35px;
   }
-  .abajo {
-    padding: 5px;
-  }
-  .abajo img {
-    width: 35px;
-    padding-right: 5px;
+  #footer .abajo img {
+    width: 25px;
+    padding-right: 10px;
   }
 }
 
@@ -277,11 +275,14 @@ iframe {
     height: 400px;
     border: 0px;
   }
-  .textfoot {
-    font-size: x-large;
+  #footer .logo {
+    width: 200px;
   }
-  .abajo img {
-    width: 40px;
+  #footer .abajo {
+    padding-right: 50px;
+  }
+  #footer .abajo img {
+    width: 30px;
     padding-right: 10px;
   }
 }
