@@ -166,7 +166,7 @@ img {
   }
   #header .botonera ul li a {
     font-weight: 600;
-    font-size: 1.0rem;
+    font-size: small;
   }
   #contenedor .banner {
     height: 300px;

@@ -168,7 +168,7 @@ img{
 	
 					a{
 						font-weight: 600;
-						font-size: 1.0rem;
+						font-size: small;
 
 					}
 				}
@@ -403,15 +403,15 @@ img{
 		height: 400px;
 		padding: 30px;
 	}
-	#footer .logo{
-    	width: 200px;
-  	}
-  	#footer .abajo{
-    	padding-right: 50px;
-  	
-  		img{
-    		width: 30px;
-    		padding-right: 10px;
-  		}
-  	}
+	.textfoot{
+		font-size: x-large;
+	}
+
+	.abajo{
+	
+		img{
+			width: 40px;
+			padding-right: 10px;
+		}
+	}
 }
