@@ -31,15 +31,31 @@ body {
 }
 
 #contenedor .banner {
-  background-image: url(../media/logo.jpg);
+  background-image: url(../media/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   height: 250px;
+}
+
+#contenedor .banner h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
+
+#contenedor .banner h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.0rem;
+  color: black;
+  text-align: center;
 }
 
 .title {
@@ -121,6 +137,12 @@ body {
   #contenedor .banner {
     height: 300px;
   }
+  #contenedor .banner h1 {
+    font-size: 3.0rem;
+  }
+  #contenedor .banner h2 {
+    font-size: 2.5rem;
+  }
   .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -191,6 +213,12 @@ body {
   }
   #contenedor .banner {
     height: 500px;
+  }
+  #contenedor .banner h1 {
+    font-size: 5.0rem;
+  }
+  #contenedor .banner h2 {
+    font-size: 4.0rem;
   }
   .title {
     font-weight: 600;
