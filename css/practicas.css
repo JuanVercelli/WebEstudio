@@ -126,19 +126,22 @@ img {
   text-align: center;
 }
 
-#footer p {
+.textfoot {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: small;
   color: grey;
+  text-align: center;
+  line-height: 2.0;
 }
 
 .abajo {
-  padding: 5px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .abajo img {
-  width: 15px;
+  width: 35px;
   padding-right: 3px;
 }
 
@@ -238,8 +241,11 @@ img {
   #footer {
     text-align: center;
   }
+  .textfoot {
+    font-size: large;
+  }
   .abajo img {
-    width: 15px;
+    width: 35px;
     padding-right: 5px;
   }
 }
@@ -331,8 +337,8 @@ img {
     height: 400px;
     padding: 30px;
   }
-  #footer p {
-    font-size: large;
+  .textfoot {
+    font-size: x-large;
   }
   .abajo img {
     width: 40px;

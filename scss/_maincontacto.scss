@@ -114,19 +114,22 @@ iframe{
 #footer{
 	background-color: black;
 	text-align: center;
-
-	p{
-		font-family: 'Montserrat', sans-serif;
-		font-weight: 600;
-		font-size: small;
-		color: grey;
-	}
+}
+.textfoot{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: small;
+	color: grey;
+	text-align: center;
+	line-height: 2.0;
 }
 
 .abajo{
-	padding: 5px;
+	text-align: center;
+	padding-top: 10px;
+	
 	img{
-		width: 15px;
+		width: 25px;
 		padding-right: 3px;
 	}
 }
@@ -207,12 +210,14 @@ iframe{
 	#footer{
 		text-align: center;
 	}
-
+	.textfoot{
+		font-size: large;
+	}
 	.abajo{
 		padding: 5px;
 		
 		img{
-			width: 15px;
+			width: 35px;
 			padding-right: 5px;
 		}
 	}
@@ -289,14 +294,9 @@ iframe{
 		height: 400px;
 		border: 0px;
 	}
-	
-	#footer{
-	
-		p{
-			font-size: large;
-		}
+	.textfoot{
+		font-size: x-large;
 	}
-
 	.abajo{
 	
 		img{

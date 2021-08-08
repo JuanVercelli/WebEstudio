@@ -128,9 +128,10 @@ img{
 
 .abajo{
 	text-align: center;
+	padding-top: 10px;
 	
 	img{
-		width: 15px;
+		width: 25px;
 		padding-right: 3px;
 	}
 }
@@ -231,12 +232,15 @@ img{
 	#footer{
 		text-align: center;
 	}
+	.textfoot{
+		font-size: large;
+	}
 
 	.abajo{
 		padding: 5px;
 		
 		img{
-			width: 15px;
+			width: 35px;
 			padding-right: 5px;
 		}
 	}
@@ -344,13 +348,9 @@ img{
 		height: 100%;
 		padding: 30px;
 	}
-	#footer{
-	
-		p{
-			font-size: large;
-		}
+	.textfoot{
+		font-size: x-large;
 	}
-
 	.abajo{
 	
 		img{
