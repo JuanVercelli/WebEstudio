@@ -8,17 +8,15 @@ body {
   background-color: #E3E3E3;
 }
 
-#header {
-  text-align: center;
-  height: 100%;
+.container-fluid {
+  padding: 0;
 }
 
-#header .botonera ul li {
-  display: inline-block;
-  padding: 0 8px;
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
 
-#header .botonera ul li a {
+ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
@@ -135,14 +133,7 @@ body {
 }
 
 @media all and (min-width: 768px) {
-  #header .botonera {
-    margin: 0;
-  }
-  #header .botonera ul li {
-    display: inline-block;
-    padding-right: 20px;
-  }
-  #header .botonera ul li a {
+  ul li a {
     font-weight: 600;
     font-size: small;
   }
@@ -207,14 +198,7 @@ body {
 }
 
 @media all and (min-width: 1024px) {
-  #header .botonera {
-    margin: 0px;
-  }
-  #header .botonera ul li {
-    display: inline-block;
-    padding-right: 30px;
-  }
-  #header .botonera ul li a {
+  ul li a {
     font-size: medium;
   }
   #contenedor {

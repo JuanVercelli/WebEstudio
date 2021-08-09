@@ -7,28 +7,20 @@ body{
 	background-color: #E3E3E3;
 }
 
-#header{
-	text-align: center;
-	height: 100%;
+.container-fluid{
+  padding: 0;
+}
 
-	.botonera{
+.navbar-light .navbar-nav .nav-link {
+ color: black;
+}
 
-		ul{
-
-			li{
-				display: inline-block;
-				padding: 0 8px;
-
-				a{
-					font-family: 'Montserrat', sans-serif;
-					font-weight: 500;
-					font-size: 0.8rem;
-					line-height: 3.0;
-					color: black;
-				}
-			}
-		}
-	}
+ul li a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 3.0;
+  color: black;
 }
 
 
@@ -151,26 +143,9 @@ img{
 }
 
 @media all and (min-width: 768px){
-	#header{
-			
-		.botonera{
-			margin: 0;
-	
-			ul{
-
-	
-				li{
-					display: inline-block;
-					padding-right: 20px;
-	
-					a{
-						font-weight: 600;
-						font-size: small;
-
-					}
-				}
-			}
-		}
+	ul li	a{
+		font-weight: 600;
+		font-size: small;
 	}
 
 
@@ -263,23 +238,8 @@ img{
 }
 
 @media all and (min-width: 1024px){
-	#header{
-	
-		.botonera{
-			margin: 0px;
-	
-			ul{
-		
-				li{
-					display: inline-block;
-					padding-right: 30px;
-	
-					a{
-						font-size: medium;
-					}
-				}
-			}
-		}
+	ul li a{
+		font-size: medium;
 	}
 
 	#contenedor{
